@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header><h1>Listado de compras</h1></header>
+   <div class="home" id="home">
+      <h5> Todavía no tenes productos cargados</h5>
+      <div id="fotoPortada"><img src="Images/super.png"></div>
+      <h6>Llená tu lista desde el botón +</h6>
+   </div>
+   <div class="contenedor">
+   <button class="fab" id="fab">+</button>
+   <div class="seccion listado dnone" id="listado">
+      <ul id="items">
+
+      </ul>
+   </div>
+   <div class="seccion detalle dnone" id="detalle">
+      <ul id="eldetalle"></ul>
+      <button id="volver">Volver</button>
+   </div>
+   <div class="seccion formulario dnone" id="formulario">
+      <div class="form-holder">
+         <div class="form-header">
+            <h2>Agregar productos</h2>
+            <button id="cerrar">X</button>
+         </div>
+         <form action="#" id="form">
+            <label  for="titulo">
+               <span  class="titulos">Titulo</span>
+               <input type="text" name="titulo" placeholder="producto" id="titulo" required/>
+            </label>
+
+            <label  for="titulo">
+               <span class="titulos">Categoría</span>
+               <select name="categoria" id="categoria" required>
+               <option value="">Elegi una categoria</option>
+               <option value="Images/vet.png">Veterinaria</option>
+               <option value="Images/salud.png">Farmacia</option>
+               <option value="Images/super.png">Super</option>
+               <option value="Images/frutilla.png">Frutas</option>
+               <option value="Images/verduleria.png">Verduras</option>
+               <option value="Images/pastas.png">Pastas</option>
+               <option value="Images/lacteos.png">Lacteos</option>
+               <option value="Images/gastosfijos.png">Gastos Fijos</option>
+               <option value="Images/gastosextras.png">Gastos Extras</option>
+               </select>
+               </label>
+
+               <label  for="titulo">
+                  <span class="titulos">Descripción</span>
+                  <textarea name="descripcion" placeholder="descripcion" id="descripcion" cols="30" rows="5" required></textarea>
+               </label>
+               <div class="btn-holder">
+               <button>Guardar</button>   
+               </div>
+         </form>
+      </div>
+   </div>
+   </div>
+   <script src="js/main.js"></script>
+</body>
+</html>
